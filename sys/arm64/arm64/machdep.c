@@ -1117,9 +1117,9 @@ initarm(struct arm64_bootparams *abp)
 	mutex_init();
 	init_param2(physmem);
 
-	dbg_init();
-	kdb_init();
-	pan_enable();
+	//dbg_init();
+	//kdb_init();
+	//pan_enable();
 
 	env = kern_getenv("kernelname");
 	if (env != NULL)
